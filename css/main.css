@@ -1,0 +1,728 @@
+@font-face {
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local(''),
+         url('../fonts/hind-madurai-v6-latin-regular.woff2') format('woff2'),
+         url('../fonts/hind-madurai-v6-latin-regular.woff') format('woff');
+  }
+
+@font-face {
+    font-family: 'Fredoka One';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local(''),
+         url('../fonts/fredoka-one-v8-latin-regular.woff2') format('woff2'),
+         url('../fonts/fredoka-one-v8-latin-regular.woff') format('woff'); 
+  }
+
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/roboto-v29-latin-regular.woff2') format('woff2'),
+         url('../fonts/roboto-v29-latin-regular.woff') format('woff'); 
+  }
+
+body{
+    margin: 0;
+    padding: 0;
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    font-family: 'Hind Madurai', 'Arial', sans-serif;
+    font-family: 'Roboto', 'Arial','san-serif';
+    font-size: 16px;
+}
+
+.all{
+    background-color: #F2CEDA;
+    width: 1600px;
+    margin-left: auto;/*o'nga olib boradi va shu ikkita amal orqali o'rtaga olib kelsa bo'ladi*/
+    margin-right: auto;/*<--- chapga olib boradi*/
+}
+
+/* Header qismi */
+*
+
+.header {
+    width: 1600px;
+    display: flex;  /*bir qatorga joylashtiradi */
+    justify-content: space-between; /* bir qator holatda o'nga otkazadi (dispalay flexsiz ishlamaydi va width 1240px holatda!)*/
+    align-items: center; /* bitta klassdagi elementlarni bir chiziqqa tortadi */
+    margin-left: auto;/*o'nga olib boradi va shu ikkita amal orqali o'rtaga olib kelsa bo'ladi*/
+    margin-right: auto;/*<--- chapga olib boradi*/
+    margin-bottom: 62px; /*header tagiga bo'shliq ko'paytiradi*/
+    
+
+}
+.container {
+    width: 1165px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-left: 121px;
+    padding-right: 115px;
+}
+
+ul, ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.list {
+    display: flex;
+    list-style-type: none; /* yonidagi nuqtalarni olib tashlaydi */
+}
+.list-item {
+    padding: 20px; /*model ichidagi padinga hajm beradi*/
+    font-size: 18px;/* kontentga hajm beradi */
+    line-height: 10px; /* tepa yoki pastga surib boradi (hajm bilan) */
+}
+.list-link {
+    display: inline-block; /* bir qatorga mixlaydi flexga o'xshab (chapga)*/
+    color: gray;
+    text-decoration: none;/* tagidagi chiziqni olib tashlaydi */
+}
+
+.border-link {
+    text-decoration: none;
+    background-color: #D23166;
+    border-radius: 5px;
+    padding: 0;
+    padding-top: 14px;
+    padding-bottom: 13px;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: #FAFAFA;
+    font-size: 16px;
+    line-height: 22.08px;
+}
+
+/* header ning pastgi qismi */
+
+.hero{
+    width: 1600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+    padding-top: 160px;
+    padding-bottom: 213px;
+    background-image: url("./../img/section1/bg-image1.png");
+    background-repeat: no-repeat;
+    background-position: calc(50% + 350px) center;
+}
+
+.feel-heading {
+    font-family: monospace;
+    font-family: 'Fredoka One', 'Arial', sans-serif;
+    width: 694px;
+    height: 130px;
+    padding-left: 254px;
+    padding-top: 1px;
+    font-size: 60.33px;
+    line-height: 120.5%;
+}
+
+.red{
+    color: red;
+}
+
+.feel-box{
+    width: 665px;
+    height: 364px;
+}
+
+.hero-feel{
+    width: 523px;
+    height: 78px;
+    padding-left: 255px;
+    padding-top: 0px;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.feel-border-link{
+    display: flex;
+    text-decoration: none;
+    background-color: #D23166;
+    border-radius: 5px;
+    padding: 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 258px;
+    margin-right: 258px;
+    margin-bottom: 12px;
+    margin-top: -35px;
+    color: #FAFAFA;
+    font-size: 16px;
+    line-height: 22.08px;
+}
+
+/* north-center */
+
+
+.container-north-center {
+    display: flex;
+    flex-direction: column;/* bir qatordagi kontentga <<USTUN>> holatga keltiradi */
+    justify-content: space-between;
+    align-items: center;  
+    background-color:#E5E5E5;
+    padding-left: 195px;
+    padding-right: 240px;
+
+    
+}
+
+.north-center-list {
+    width: 1520px;
+    margin: -11px;
+    padding-top: 53px;
+    padding-bottom: 53px;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap; /* ekran kattalashtirliayotganda o'rash uslubi */
+    align-items: center;
+    margin-left: 8px;
+    margin-right: -34px;
+}
+.north-center-item {
+    width: 249px;
+    height: 227px;
+    background-color:  white;
+    padding: 39px 26px 27px 26px;/* "1-tepadan" "2-chapdan" "3-pastdan" */
+    margin: 39px;
+    border-radius: 13px;
+}
+
+.north-center-heading {
+    font-size: 20px;
+    line-height: 28px;
+}
+.north-center-text {
+    
+    width: 198px;
+    height: 35px;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.north-center-item2{
+    box-shadow:  20px 20px 50px rgba(0, 0, 0, 0.1);;
+}
+
+/* Brown */
+
+.alll{
+    width: 1600px;
+    background-color: #F8EDF0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.brown{
+    width: 1600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+    padding-top: 78px;
+    padding-bottom: 53px;
+    background-image: url("./../img/section2/section2-image.svg");
+    background-repeat: no-repeat;
+    background-position: calc(50% + 309px) -58px;
+}
+
+.brown-heading{
+    width: 349px;
+    height: 98.27px;
+    padding-left: 254px;
+    padding-top: 1px;
+    font-weight: 600;
+    font-size: 44.2px;
+    line-height: 49px;
+}
+
+.hero-brown{
+    width: 523px;
+    height: 78px;
+    padding-left: 254px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.brown-box{
+    width: 442px;
+    height: 256.71px;
+}
+
+.brown-link{
+    display: flex;
+    text-decoration: none;
+    background-color: #D23166;
+    border-radius: 5px;
+    padding: 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 258px;
+    margin-right: 258px;
+    margin-bottom: 12px;
+    margin-top: 1px;
+    color: #FAFAFA;
+    font-size: 16px;
+    line-height: 22.08px;
+}
+
+/* product qismi */
+
+.product{
+    width: 1600px;
+    display: flex;  /*bir qatorga joylashtiradi */
+    justify-content: space-between; /* bir qator holatda o'nga otkazadi (dispalay flexsiz ishlamaydi va width 1240px holatda!)*/
+    align-items: center; /* bitta klassdagi elementlarni bir chiziqqa tortadi */
+    margin-left: auto;/*o'nga olib boradi va shu ikkita amal orqali o'rtaga olib kelsa bo'ladi*/
+    margin-right: auto;/*<--- chapga olib boradi*/
+    margin-bottom: 62px;
+}
+
+.for-product{
+    width: 1125px;
+    height: 79px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-left: 121px;
+    padding-right: 115px;
+}
+
+.product-list{
+    display: flex;
+    list-style-type: none; 
+}
+
+.our{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.product-list-item{
+    padding: 27px; /*model ichidagi padinga hajm beradi*/
+    font-size: 18px;/* kontentga hajm beradi */
+    line-height: 10px;
+}
+
+.product-link{
+        display: inline-block; /* bir qatorga mixlaydi flexga o'xshab (chapga)*/
+        color: gray;
+        text-decoration: none;/* tagidagi chiziqni olib tashlaydi*/
+}
+
+/* bread qismi*/
+
+.bread{
+    width: 1600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+    padding-top: 43px;
+    padding-bottom: 53px;
+    background-image: url("./../img/north-center-img/Rectangle\ 74.svg");
+    background-repeat: no-repeat;
+    background-position: calc(20% + 1px) 14px;
+    flex-direction: row-reverse;
+}
+
+.bread-container{
+    margin-left: 100px;
+}
+
+.border-link-bread{
+    display: flex;
+    text-decoration: none;
+    background-color: #D23166;
+    border-radius: 5px;
+    padding: 0;
+    padding-top: 16px;
+    padding-bottom: 17px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 258px;
+    margin-right: 539px;
+    margin-bottom: 12px;
+    margin-top: 15px;
+    color: #FAFAFA;
+    font-size: 16px;
+    line-height: 22.08px;
+}
+
+.brown-container-2{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.narx{
+    padding-left: 258px;
+}
+
+.bread-2{
+    width: 1600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+    padding-top: 43px;
+    padding-bottom: 53px;
+    background-image: url("./../img/section2/lemon.svg");
+    background-repeat: no-repeat;
+    background-position: calc(20% + 600px) 14px;
+   
+}
+
+
+.bread-3{
+    width: 1600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+    padding-top: 43px;
+    padding-bottom: 53px;
+    background-image: url("./../img/section2/Rectangle\ 79.svg");
+    background-repeat: no-repeat;
+    background-position: calc(20% + 1px) 14px;
+    flex-direction: row-reverse;
+}
+
+.bread-4{
+    width: 1600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+    padding-top: 43px;
+    padding-bottom: 53px;
+    background-image: url("./../img/section2/pirok.svg");
+    background-repeat: no-repeat;
+    background-position: calc(20% + 600px) -41px;
+}
+
+
+
+.bread-box-5{
+    background-image: url("./../img/section2/Ellipse\ 21.svg");
+    background-repeat: no-repeat;
+    background-position: calc(10% + 100px) 0px;
+}
+
+
+.hero-brown-bread{
+    width: 523px;
+    height: 78px;
+    padding-left: 216px;
+    padding-top: 0px;
+    padding-bottom: 191px;
+    font-size: 16px;
+    line-height: 24px;
+    background-image: url("./../img/section2/john.png");
+    background-repeat: no-repeat;
+    background-position: calc(10% + 173px) 135px;
+}
+
+.vergul{
+    margin-left: -14px;
+}
+
+
+/* over */
+
+.simple-container{
+    width: 1600px;
+height: 678px;
+}
+
+.over{
+    width: 1600px;
+    height: 678px;
+    background-color: #F8EDF0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.simple-box{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 287px;
+}
+
+.simple-img{
+    padding-top: 118px;
+    padding-bottom: 81px;
+    padding-left: 1px;
+    padding-right: 614px;
+    margin-left: 239px;
+    margin-right: 654px;
+    margin-bottom: -10px;
+    margin-top: -48px;
+}
+
+.way{
+    padding: 11px 64px 10px 10px;
+    margin: -596px -62px 10px 10px;
+    font-weight: 500;
+    font-size: 44.2px;
+    line-height: 52px;
+}
+
+
+
+.indicators{
+    padding: 11px 64px 43px 10px;
+    margin: -11px 399px 10px 10px;
+}
+
+.app-store{
+    padding: 11px 64px 43px 10px;
+    margin: -63px 220px 39px 10px;
+}
+
+.appp{
+    padding: 68px 64px -3px 10px;
+    margin: -39px -25px -6px 10px;
+}
+
+.over-hero-feel{
+    width: 607px;
+    
+    margin-left: 10px;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.01em;
+
+    color: #0F0101;
+
+    opacity: 0.7;
+}
+
+/*question*/
+
+.question {
+    margin-bottom: 110px;
+}
+
+.container-question {
+    display: flex; /* <-- */
+    flex-direction: column;
+    align-items: center;
+}
+.question-header {
+    max-width: 522px;
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 52px;
+    margin: 0;
+    margin-bottom: 36px;
+    text-align: center;
+}
+
+.question-form{
+    width: 687px;
+}
+.question-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 37px;
+}
+.question-input-tel {
+    max-width: 303px;
+    width: 100%;
+    border: 2px solid #FFA3A3;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #0F0000;
+    opacity: 0.6;
+    padding: 29px 25px;
+}
+
+.question-type{
+    max-width: 303px;
+    width: 100%;
+    border: 2px solid #FFA3A3;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #0F0000;
+    opacity: 0.6;
+    padding: 29px 25px;
+}
+.question-bottom {
+    display: flex;
+}
+
+.question-input-text {
+    max-width: 503px;
+    width: 100%;
+    border: 2px solid #FFA3A3;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #0F0000;
+    opacity: 0.6;
+    padding: 29px 25px;
+}
+
+.question-btn{
+    flex-grow: 1;
+    display: inline-block;
+    padding: 26px 44px;
+    border: none;
+    background-color: #D64374;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    border-radius: 5px;
+    margin-left: -2px;
+    z-index: 1; /* elementni boshqa element ustiga chiqarib qo'yish usuli */
+}
+
+/* Footer */
+
+.footer-container {
+    padding-top: 70px;
+    padding-bottom: 104px;
+    padding-left: 220px;
+    padding-right: 220px;
+    background-color: #0A0808;
+    
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.footer-left {
+    display: flex;
+    align-items: flex-end;
+    
+}
+.footer-inner-left {
+    max-width: 207px;
+    width: 100%;
+}
+
+.footer-logo-img {
+    object-fit: contain;
+}
+.footer-text {
+    margin: 0;
+    margin-bottom: 25px;
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+}
+.footer-left-header {
+    margin: 0;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;;
+}
+.footer-social-list {
+    display: flex;
+    align-items: center;
+
+}
+.footer-social-item {
+    margin-right: 10px;
+}
+
+.footer-social-item a:hover {
+    opacity: 0.5;
+}
+
+.footer-inner-right {
+    
+    width: 309px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 37px;
+    margin-right: 150px;   
+}
+
+.footer-right {
+    width: 388px;
+}
+
+.footer-email {
+    padding: 20px 32px;
+
+}
+
+.footer-btn{
+    padding: 16px 17px;
+}
+
+.footer-right-header {
+    color: #FFFFFF;
+}
+
+.footer-paymet-list {
+    display: flex;
+    align-items: center;
+
+}
+.footer-paymet-item {
+    margin-right: 15px;
+}
+
+.footer-form{
+    margin-bottom: 15px;
+}
+
+.list-link{
+    text-decoration: none;
+
+}
